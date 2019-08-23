@@ -1,0 +1,31 @@
+{% extends 'quiz/header.html' %}
+
+{% block content %}
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-lg-5 text-center heading">
+			<h1 class="display-3">Exam Topics</h1>
+		</div>
+	</div>	
+	{% if exam_list %}
+	<ul class="list-group-mine list-group list-group-flush list-unstyled list-group-success">
+		{% for topic in exam_list %}
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-center">
+				<li>
+					<a class="text-decoration-none text-light list-group-item list-group-action h6" href="{% url 'quiz:question' topic.id %}">{{ topic.name }}</a>
+				</li>
+			</div>
+		</div>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-center">
+				<h2>No Exams are available.</h2>
+			</div>
+		</div>
+	{% endif %}
+</div>
+{% endblock %}
+

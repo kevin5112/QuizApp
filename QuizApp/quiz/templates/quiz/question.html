@@ -1,0 +1,11 @@
+{% extends 'quiz/header.html' %}
+
+{% block content %}
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{% csrf_token %}
+<h1>{{ question.question_text }}</h1>
+
+
+{% endblock %}

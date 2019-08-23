@@ -1,0 +1,20 @@
+.heading {
+	padding: 20px;
+	color: white;
+}
+
+.list-group-mine .list-group-item {
+	background-color: #78a07d;
+	font-size: 1.5em;
+	/*background-color: #CA5432;*/
+	/*background-color: #A57BC6;*/
+}
+
+.bg {
+	/*background-color: #610303;*/
+	background-color: #78a07d;
+}
+
+.sButton {
+	width: 100px;
+}

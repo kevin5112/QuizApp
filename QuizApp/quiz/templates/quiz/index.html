@@ -1,0 +1,22 @@
+{% extends 'quiz/header.html' %}
+
+{% block content %}
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-lg-4 text-center heading">
+			<h1 class="display-2">Quiz Me</h1>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-4 text-center">
+			<button onclick="location.href='{% url 'quiz:exam' %}';" type="button" class="btn btn-outline-light sButton m-3">Start</button>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-4 text-center">
+			<button type="button" class="btn btn-outline-light sButton m-3">Scores</button>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
